@@ -1,14 +1,12 @@
 Dic = {}
 
 while True:
-        key = int(input("정수 key값을 입력해주세요 : "))
-        value = input("문자열 value값을 입력해주세요 : ")
-if(key == 0 or value == "종료"):
-        print("그만")
-        print(Dic)
+    key = int(input("숫자로 key를 입력하세요 > "))
+    value = str(input("문자로 value를 입력하세요 > "))
+    if (key == 0) or (value == "문자열 종료"):
         break
-else:
-        Dic[key]=value
+    else:
+        Dic[key] = value
 
 
 print(list(Dic.keys()))
